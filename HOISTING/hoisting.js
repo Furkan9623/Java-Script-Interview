@@ -1,5 +1,7 @@
 // Hoisting is the default behavior of javaScript where all the variable and function declaration are move to the top before the excution.
 
+// let and const variable not support hoisting and its not move to the top
+
 // example of variable
 a = 10;
 console.log(a); // return 10;
@@ -36,3 +38,10 @@ init2();
 function init2() {
   console.log(otherName); // return Masai School
 }
+
+// example 4
+// function initialization are not hoisted i give you one example
+host2();
+var host2 = () => {
+  console.log("Hello Hoisting"); // return error becoz function initilazation are not hosted
+};
